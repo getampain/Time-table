@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uk.com.schedule.MainActivity">
+
+    //scroll view for vertical part
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fillViewport="true">
+
+        //scroll view for horizontal paart
+        <HorizontalScrollView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            //first linerarlayout for frame
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                //first vertical line
+                <LinearLayout
+                    android:background="#886495ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    //set layout first part
+                    <TextView
+                        android:id="@+id/tt"
+                        android:background="#58515b6e"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="수업시간"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="1교시\"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="2교시"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="3교시"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="4교시"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="5교시"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="6교시"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="7교시"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="8교시"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="9교시"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="10교시"
+
+                        />
+                </LinearLayout>
+                //linerlayout for monday part
+                <LinearLayout
+                    android:layout_width="115.5dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/monday"
+                    >
+                    //set monday schedule
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:background="#58515b6e"
+                        android:text="월요일"
+                        />
+                    //between classes
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        />
+                    <TextView
+                        android:background="#8844e912"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="에듀에코세미나\n305"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        />
+
+                    <TextView
+                        android:background="#c2f48b0b"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:gravity="center"
+                        android:text="모바일프로그래밍\n412"
+
+                        />
+                    <TextView
+                        android:background="#c2f40b0b"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:gravity="center"
+                        android:text="경영학원론\n305"
+
+                        />
+                </LinearLayout>
+                //linearlayout for tuesday
+                <LinearLayout
+                    android:layout_width="115.5dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/tuesday"
+                    >
+                    <TextView
+                        android:background="#58515b6e"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="화요일"
+                        />
+                    <TextView
+                        android:background="#58e72de7"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:gravity="center"
+                        android:text="건축문화사\n304"
+                        />
+                    //between classes
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        />
+                    <TextView
+                        android:background="#58272bea"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:gravity="center"
+                        android:text="컴퓨터 그래픽스\n304"
+                        />
+                </LinearLayout>
+                //linearlayout for wedensday
+                <LinearLayout
+                    android:layout_width="115.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:id="@+id/wednesday"
+                    >
+                    <TextView
+                        android:background="#58515b6e"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="수요일"
+                        />
+                    //between classes
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        />
+                    <TextView
+                        android:background="#581cfabf"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:gravity="center"
+                        android:text="모바일프로그래밍\n412"
+                        />
+                    //between classes
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        />
+                    <TextView
+                        android:background="#58fa231c"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:gravity="center"
+                        android:text="소프트웨어산업\n세미나 601"
+
+                        />
+                </LinearLayout>
+                //linearlayout for thursday
+                <LinearLayout
+                    android:layout_width="115.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:id="@+id/thursday"
+                    >
+                    <TextView
+                        android:background="#58515b6e"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="목요일"
+                        />
+                    <TextView
+                        android:background="#e330bc1b"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:gravity="center"
+                        android:text="자료구조\n601"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        />
+                    <TextView
+                        android:background="#36a4bc1b"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:gravity="center"
+                        android:text="졸업작품\n304"
+                        />
+                </LinearLayout>
+                //linearlayout for friday
+                <LinearLayout
+                    android:layout_width="115.5dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/friday"
+                    >
+                    <TextView
+                        android:background="#58515b6e"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="금요일"
+                        />
+                    <TextView
+                        android:background="#526825af"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:gravity="center"
+                        android:text="소프트웨어공학\n09:30~10:45\n304"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+
+
+</LinearLayout>
